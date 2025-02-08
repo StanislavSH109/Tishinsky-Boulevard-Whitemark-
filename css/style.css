@@ -497,6 +497,14 @@ textarea {
   width: 24px;
   height: 20px;
   color: rgba(255, 255, 255, 0.3);
+  transition: transform ease-in 0.3s;
+}
+.social__link:hover {
+  transform: scale(1.1);
+}
+.social__link:focus {
+  transform: scale(1.1);
+  outline: none;
 }
 .social__icon {
   width: 24px;
@@ -2053,6 +2061,14 @@ textarea {
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
+  transition: opacity ease-in 0.3s;
+}
+.footer__item-link:hover {
+  opacity: 0.5;
+}
+.footer__item-link:focus {
+  opacity: 0.5;
+  outline: none;
 }
 .footer__note-text {
   max-width: 800px;

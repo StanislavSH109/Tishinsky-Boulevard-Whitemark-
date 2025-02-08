@@ -12,6 +12,16 @@
     width: 24px;
     height: 20px;
     color: rgba($color-white, 0.3);
+    transition: transform $transition-300;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    &:focus {
+      transform: scale(1.1);
+      outline: none;
+    }
   }
 
   &__icon {
