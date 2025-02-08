@@ -2,6 +2,13 @@
   padding: 125px 0 118px;
   position: relative;
 
+  &:hover {
+    .section-next__image {
+      background-color: $color-black;
+      opacity: 0.6;
+    }
+  }
+
   @include vp-767 {
     padding: 160px 0 141px;
   }
@@ -14,6 +21,8 @@
       left: 0;
       width: 100%;
       height: 100%;
+      opacity: 1;
+      transition: background-color $transition-300;
     }
   }
 
@@ -71,6 +80,7 @@
     width: 100%;
     height: 100%;
     z-index: -1;
+    transition: opacity $transition-300;
   }
 
   &__img {
