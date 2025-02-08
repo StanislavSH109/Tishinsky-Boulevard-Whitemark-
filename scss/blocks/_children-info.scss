@@ -38,8 +38,11 @@
   }
 
   &__image {
-    margin: 0 -80px;
-    display: flex;
+    width: 100vw;
+    display: block;
+    position: relative;
+    transform: translateX(-50%);
+    left: 50%;
   }
 
   &__img {
