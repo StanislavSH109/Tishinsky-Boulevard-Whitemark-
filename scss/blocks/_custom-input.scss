@@ -11,6 +11,16 @@
     padding: 15px 20px;
     width: 100%;
     outline: none;
+    transition: border  $transition-300;
+
+    &:hover {
+      border: 1px solid black;
+    }
+
+    &:focus {
+      border: 1px solid black;
+    }
+  
 
     &::placeholder {
       color: rgba($color-jaguar, 0.3);

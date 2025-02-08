@@ -171,6 +171,16 @@
     cursor: pointer;
     margin: 0;
     padding: 0;
+    transition: transform $transition-300;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    &:focus {
+      transform: scale(1.05);
+      outline: none;
+    }
 
     @media (max-width: 1200px) {
       font-size: 26px;

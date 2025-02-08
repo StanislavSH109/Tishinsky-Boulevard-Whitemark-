@@ -140,6 +140,23 @@
     align-items: center;
     justify-content: center;
     color: $color-jaguar;
+    cursor: pointer;
+    transition: 
+      border $transition-300, 
+      background-color $transition-300, 
+      color $transition-300;
+
+    &:hover {
+      background-color: $color-black;
+      border: transparent;
+      color: $color-white;
+    }
+      
+    &:focus {
+      background-color: $color-black;
+      border: transparent;
+      color: $color-white;
+    }
   }
 
   &__checkbox {

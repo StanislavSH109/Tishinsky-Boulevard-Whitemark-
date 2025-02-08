@@ -432,6 +432,13 @@ textarea {
   padding: 15px 20px;
   width: 100%;
   outline: none;
+  transition: border ease-in 0.3s;
+}
+.custom-input__field:hover {
+  border: 1px solid black;
+}
+.custom-input__field:focus {
+  border: 1px solid black;
 }
 .custom-input__field::placeholder {
   color: rgba(29, 28, 41, 0.3);
@@ -1255,6 +1262,14 @@ textarea {
   cursor: pointer;
   margin: 0;
   padding: 0;
+  transition: transform ease-in 0.3s;
+}
+.unique__gallery-button:hover {
+  transform: scale(1.05);
+}
+.unique__gallery-button:focus {
+  transform: scale(1.05);
+  outline: none;
 }
 @media (max-width: 1200px) {
   .unique__gallery-button {
@@ -1720,6 +1735,18 @@ textarea {
   align-items: center;
   justify-content: center;
   color: #1D1C29;
+  cursor: pointer;
+  transition: border ease-in 0.3s, background-color ease-in 0.3s, color ease-in 0.3s;
+}
+.elite-promo__btn:hover {
+  background-color: #000000;
+  border: transparent;
+  color: #ffffff;
+}
+.elite-promo__btn:focus {
+  background-color: #000000;
+  border: transparent;
+  color: #ffffff;
 }
 .elite-promo__checkbox {
   display: flex;
