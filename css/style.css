@@ -408,6 +408,11 @@ textarea {
   font-size: 16px;
   line-height: 21.6px;
   font-family: "Arsenal", "Arial", sans-serif;
+  transition: background-color ease-in 0.3s, color ease-in 0.3s;
+}
+.btn:hover {
+  background-color: #000000;
+  color: #ffffff;
 }
 @media (max-width: 1023px) {
   .btn {
@@ -532,6 +537,12 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+  transition: transform ease-in 0.3s, filter 0.2s ease;
+}
+.header__burger:hover {
+  transform: scale(1.05);
+  filter: invert(1);
 }
 @media (max-width: 767px) {
   .header__burger {
@@ -571,6 +582,10 @@ textarea {
   line-height: 21.6px;
   font-size: 16px;
   color: #ffffff;
+  transition: transform ease-in 0.3s;
+}
+.header__phone:hover {
+  transform: scale(1.1);
 }
 @media (max-width: 1280px) {
   .header__phone-text {
@@ -922,6 +937,14 @@ textarea {
   color: #ffffff;
   font-size: 18px;
   line-height: 1.35;
+  cursor: pointer;
+  transition: background-color ease-in 0.3s;
+}
+.respectability__video-play:hover {
+  background-color: #7d7d7d;
+}
+.respectability__video-play:hover .respectability__video-icon {
+  transform: translateX(20%);
 }
 @media (max-width: 1023px) {
   .respectability__video-play {
@@ -938,6 +961,9 @@ textarea {
     width: 197px;
     padding: 16px;
   }
+}
+.respectability__video-icon {
+  transition: transform 0.2s ease-in;
 }
 @media (max-width: 767px) {
   .respectability__video-icon {
