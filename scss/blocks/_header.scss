@@ -50,6 +50,13 @@
       transform: scale(1.05);
       filter: invert(1);
     }
+    
+    &:focus {
+      transform: scale(1.05);
+      filter: invert(1);
+      outline: none;
+    }
+
 
     @include vp-767 {
       height: 15px;
@@ -94,7 +101,12 @@
     transition: transform $transition-300;
 
     &:hover {
-      transform: scale(1.1);
+      transform: scale(1.05);
+    }
+
+    &:focus {
+      transform: scale(1.03);
+      outline: none;
     }
   }
 

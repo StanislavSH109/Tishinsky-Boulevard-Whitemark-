@@ -19,6 +19,13 @@
     color: $color-white;
   }
 
+  &:focus {
+    background-color: $color-black;
+    color: $color-white;
+    outline: none;
+  }
+
+
   @include vp-1023 {
     padding: 10px;
   }
