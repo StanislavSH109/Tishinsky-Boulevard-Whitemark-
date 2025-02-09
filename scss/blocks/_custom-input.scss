@@ -26,4 +26,12 @@
       color: rgba($color-jaguar, 0.3);
     }
   }
+
+  &__text {
+    position: absolute;
+    width: 300px;
+    left: 0;
+    bottom: 0;
+    transform: translate(10%, 100%);
+  }
 }
