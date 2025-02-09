@@ -5,15 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="preload" href="fonts/Arsenal-Regular.woff2">
-  <link rel="preload" href="fonts/PTSans-Regular.woff2">
+  <link rel="preload" href="fonts/Arsenal-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/PTSans-Regular.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
-  <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
-  <link rel="shortcut icon" href="favicon/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
-  <meta name="apple-mobile-web-app-title" content="Tishinskyi" />
-  <link rel="manifest" href="favicon/site.webmanifest" />
+  <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg">
+  <link rel="shortcut icon" href="favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-title" content="Tishinskyi">
+  <link rel="manifest" href="favicon/site.webmanifest">
   <title>Тихий зелёный элитный архитектурный проект на Тишинке. - Тишинский бульвар</title>
 </head>
 
@@ -21,7 +21,7 @@
   <header class="header">
     <div class="container">
       <div class="header__wrapper">
-        <button class="header__burger" type="button">
+        <button class="header__burger" type="button" aria-label="Кнопка меню">
           <svg class="header__burger-icon" width="40" height="15" aria-hidden="true">
             <use xlink:href="images/sprite.svg#icon-burger"></use>
           </svg>
@@ -49,8 +49,6 @@
         <div class="hero__wrapper">
           <div class="hero__picture">
             <picture>
-              <!-- <source type="image/webp" media="(max-width: 767px)" srcset="images/hero-mobile.webp 1x, images/hero-mobile@2x.webp 2x">
-              <source type="image/webp" srcset="images/hero.webp 1x, images/hero@2x.webp 2x"> -->
               <source media="(max-width: 767px)" srcset="images/hero/hero-mobile.jpg 1x, images/hero/hero-mobile@2x.jpg 2x">
               <img class="hero__img" src="images/hero/hero.jpg" srcset="images/hero/hero@2x.jpg 2x"
                 alt="Изображение ЖК Тишинский">
@@ -93,8 +91,7 @@
       </div>
       <div class="advantages__picture">
         <picture>
-          <source media="(max-width: 767px)"
-            srcset="images/advantages/advantages-mobile.png 1x, images/advantages/advantages-mobile@2x.png">
+          <source media="(max-width: 767px)" srcset="images/advantages/advantages-mobile.png 1x, images/advantages/advantages-mobile@2x.png 2x">
           <img class="advantages__img" src="images/advantages/advantages.png" srcset="images/advantages/advantages@2x.png 2x" height="970" loading="lazy" 
             width="1440" alt="Изображение ЖК Тишинский">
         </picture>
@@ -127,7 +124,7 @@
               <div class="image-card">
                 <picture>
                   <source media="(max-width: 767px)"
-                    srcset="images/respectability/respectability-1-mobile.jpg 1x, images/respectability-1-mobile@2x.jpg 2x">
+                    srcset="images/respectability/respectability-1-mobile.jpg 1x, images/respectability/respectability-1-mobile@2x.jpg 2x">
                   <img class="image-card__img" src="images/respectability/respectability-1.jpg" loading="lazy"
                     srcset="images/respectability/respectability-1@2x.jpg 2x" height="407" width="408"
                     alt="Изображение здания">
@@ -182,8 +179,8 @@
               <picture>
                 <source media="(max-width: 767px)"
                   srcset="images/unique/unique-1-mobile.jpg 1x, images/unique/unique-1-mobile@2x.jpg 2x">
-                <img class="unique__img" src="images/unique/unique-1.jpg" srcset="images/unique-1@2x.jpg 2x" loading="lazy"
-                  alt="Изображение парка">
+                <img class="unique__img" src="images/unique/unique-1.jpg" srcset="images/unique/unique-1@2x.jpg 2x" loading="lazy"
+                  width="923" height="640"  alt="Изображение парка">
               </picture>
             </div>
             <ul class="unique__gallery-list">
@@ -236,8 +233,8 @@
           <div class="architecture__image">
             <picture>
               <source media="(max-width: 767px)"
-                srcset="images/architecture/architecture-mobile.png 1x, images/architecture/architecture-mobile@2x.png 2x">
-              <img class="architecture__img" src="images/architecture/architecture.png" srcset="images/architecture/architecture@2x.png 2x" loading="lazy"
+                srcset="images/architecture/architecture-mobile.jpg 1x, images/architecture/architecture-mobile@2x.jpg 2x">
+              <img class="architecture__img" src="images/architecture/architecture.jpg" srcset="images/architecture/architecture@2x.jpg 2x" loading="lazy"
                 height="731" width="1440" alt="Изображение архитектуры Москвы">
             </picture>
           </div>
@@ -288,8 +285,7 @@
           <div class="elite-promo__inner">
             <div class="elite-promo__image">
               <picture>
-                <source media="(max-width: 767px)"
-                  srcset="images/elite/elite-mobile.jpg 1x, images/elite/elite-mobile@2x.jpg">
+                <source media="(max-width: 767px)" srcset="images/elite/elite-mobile.jpg 1x, images/elite/elite-mobile@2x.jpg 2x">
                 <img class="elite-promo__img" src="images/elite/elite.jpg" srcset="images/elite/elite@2x.jpg 2x" loading="lazy" height="913"
                   width="1440" alt="Фотография квартиры">
               </picture>
@@ -303,11 +299,11 @@
           <form action="#" method="post" class="elite-promo__form">
             <div class="elite-promo__box">
               <div class="custom-input elite-promo__input">
-                <input type="text" class="custom-input__field" aria-label="Введите свое имя" placeholder="Ваше имя">
+                <input type="text" class="custom-input__field" aria-label="Введите свое имя" placeholder="Ваше имя" required>
                 <span class="custom-input__text">Необходимо заполнить поле</span>
               </div>
               <div class="custom-input elite-promo__input">
-                <input type="tel" class="custom-input__field" aria-label="Введите свой телефон" placeholder="Телефон">
+                <input type="tel" class="custom-input__field" aria-label="Введите свой телефон" placeholder="Телефон" required>
                 <span class="custom-input__text">Необходимо заполнить поле</span>
               </div>
               <button class="elite-promo__btn" type="submit" disabled>Отправить</button>
@@ -381,7 +377,7 @@
         <div class="footer__col footer__col--right">
           <span class="footer__chapter">Контакты</span>
           <a class="footer__link-text footer__link-text--mobile-dn"  href="tel:+74951274072">+7 (495) 104-26-00</a>
-          <a class="footer__link footer__link--mobile-dn"  href="mailto:info@sminex.com"">info@sminex.com</a>
+          <a class="footer__link footer__link--mobile-dn"  href="mailto:info@sminex.com">info@sminex.com</a>
         </div>
       </div>
       <ul class="footer__social social">
