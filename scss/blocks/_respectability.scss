@@ -7,11 +7,16 @@
     margin: 0 0 50px 0;
   }
 
+  &__wrapper {
+    padding: 0 50px;
+  }
+
   &__decor {
     position: absolute;
     right: 0;
     top: -360px;
     z-index: -1;
+    pointer-events: none;
 
     @include vp-767 {
       display: none;
@@ -47,8 +52,7 @@
     font-size: 28px;
     line-height: 1.5;
     text-transform: uppercase;
-    margin: 0 auto;
-    padding: 0 0 75px 0;
+    margin: 0 auto 75px auto;
     text-align: center;
 
     @include vp-1023 {
@@ -75,7 +79,7 @@
   }
 
   &__video {
-    height: 600px;
+    min-height: 600px;
     width: 100%;
     object-fit: cover;
     display: flex;
@@ -107,6 +111,8 @@
     line-height: 1.35;
     cursor: pointer;
     transition: background-color $transition-300;
+    outline: none;
+    border: none;
 
     &:hover {
       background-color: rgba($color-grey, 1);

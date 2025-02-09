@@ -49,10 +49,10 @@
         <div class="hero__wrapper">
           <div class="hero__picture">
             <picture>
-              <source type="image/webp" media="(max-width: 767px)" srcset="images/hero-mobile.webp 1x, images/hero-mobile@2x.webp 2x">
-              <source type="image/webp" srcset="images/hero.webp 1x, images/hero@2x.webp 2x">
-              <source media="(max-width: 767px)" srcset="images/hero-mobile.jpg 1x, images/hero/hero-mobile@2x.jpg 2x">
-              <img class="hero__img" src="images/hero.jpg" srcset="images/hero@2x.jpg 2x"
+              <!-- <source type="image/webp" media="(max-width: 767px)" srcset="images/hero-mobile.webp 1x, images/hero-mobile@2x.webp 2x">
+              <source type="image/webp" srcset="images/hero.webp 1x, images/hero@2x.webp 2x"> -->
+              <source media="(max-width: 767px)" srcset="images/hero/hero-mobile.jpg 1x, images/hero/hero-mobile@2x.jpg 2x">
+              <img class="hero__img" src="images/hero/hero.jpg" srcset="images/hero/hero@2x.jpg 2x"
                 alt="Изображение ЖК Тишинский">
             </picture>
           </div>
@@ -94,8 +94,8 @@
       <div class="advantages__picture">
         <picture>
           <source media="(max-width: 767px)"
-            srcset="images/advantages/advantages-mobile.pngimages/advantages/advantages-mobile@2x.png">
-          <img class="advantages__img" src="images/advantages.png" srcset="images/advantages@2x.png 2x" height="970"
+            srcset="images/advantages/advantages-mobile.png 1x, images/advantages/advantages-mobile@2x.png">
+          <img class="advantages__img" src="images/advantages/advantages.png" srcset="images/advantages/advantages@2x.png 2x" height="970" loading="lazy" 
             width="1440" alt="Изображение ЖК Тишинский">
         </picture>
       </div>
@@ -114,12 +114,12 @@
           </p>
           <div class="respectability__video-box">
             <video class="respectability__video" src="video/video-preview.mp4" width="1280" height="670" autoplay></video>
-            <span class="respectability__video-play">
+            <button class="respectability__video-play">
               <svg class="respectability__video-icon" width="20" height="25" aria-hidden="true">
                 <use xlink:href="images/sprite.svg#icon-play"></use>
               </svg>
               <span class="respectability__video-text">Смотреть видео</span>
-            </span>
+            </button>
           </div>
           <h2 class="respectability__subtitle">Знаковое окружение</h2>
           <ul class="respectability__list">
@@ -127,8 +127,8 @@
               <div class="image-card">
                 <picture>
                   <source media="(max-width: 767px)"
-                    srcset="images/respectability/respectability-1-mobile.jpg 1x, images/respectability/respectability-1-mobile@2x.jpg 2x">
-                  <img class="image-card__img" src="images/respectability/respectability-1.jpg"
+                    srcset="images/respectability/respectability-1-mobile.jpg 1x, images/respectability-1-mobile@2x.jpg 2x">
+                  <img class="image-card__img" src="images/respectability/respectability-1.jpg" loading="lazy"
                     srcset="images/respectability/respectability-1@2x.jpg 2x" height="407" width="408"
                     alt="Изображение здания">
                 </picture>
@@ -140,8 +140,8 @@
               <div class="image-card">
                 <picture>
                   <source media="(max-width: 767px)"
-                    srcset="images/respectability/respectability-2-mobile.jpg 1x, images/respectability/respectability-2-mobile@2x.jpg 2x">
-                  <img class="image-card__img" src="images/respectability/respectability-2.jpg"
+                    srcset="images/respectability-2-mobile.jpg 1x, images/respectability/respectability-2-mobile@2x.jpg 2x">
+                  <img class="image-card__img" src="images/respectability/respectability-2.jpg" loading="lazy"
                     srcset="images/respectability/respectability-2@2x.jpg 2x" height="407" width="408"
                     alt="Изображение здания">
                 </picture>
@@ -153,9 +153,9 @@
               <div class="image-card">
                 <picture>
                   <source media="(max-width: 767px)"
-                    srcset="images/respectability-3-mobile.jpg 1x, images/respectability/respectability-3-mobile@2x.jpg 2x">
-                  <img class="image-card__img" src="images/respectability-3.jpg"
-                    srcset="images/respectability-3@2x.jpg 2x" height="407" width="408" alt="Изображение здания">
+                    srcset="images/respectability/respectability-3-mobile.jpg 1x, images/respectability/respectability-3-mobile@2x.jpg 2x">
+                  <img class="image-card__img" src="images/respectability/respectability-3.jpg" loading="lazy"
+                    srcset="images/respectability/respectability-3@2x.jpg 2x" height="407" width="408" alt="Изображение здания">
                 </picture>
                 <span class="image-card__number">600<span class="image-card__number-size">м</span></span>
                 <p class="image-card__text">Центр «Зотов» — культурное пространствои памятник конструктивизма</p>
@@ -181,8 +181,8 @@
             <div class="unique__gallery-pic">
               <picture>
                 <source media="(max-width: 767px)"
-                  srcset="images/unique-1-mobile.jpg 1x, images/unique/unique-1-mobile@2x.jpg 2x">
-                <img class="unique__img" src="images/unique-1.jpg" srcset="images/unique-1@2x.jpg 2x"
+                  srcset="images/unique/unique-1-mobile.jpg 1x, images/unique/unique-1-mobile@2x.jpg 2x">
+                <img class="unique__img" src="images/unique/unique-1.jpg" srcset="images/unique-1@2x.jpg 2x" loading="lazy"
                   alt="Изображение парка">
               </picture>
             </div>
@@ -236,8 +236,8 @@
           <div class="architecture__image">
             <picture>
               <source media="(max-width: 767px)"
-                srcset="images/architecture-mobile.png 1x, images/architecture/architecture-mobile@2x.png 2x">
-              <img class="architecture__img" src="images/architecture.png" srcset="images/architecture@2x.png 2x"
+                srcset="images/architecture/architecture-mobile.png 1x, images/architecture/architecture-mobile@2x.png 2x">
+              <img class="architecture__img" src="images/architecture/architecture.png" srcset="images/architecture/architecture@2x.png 2x" loading="lazy"
                 height="731" width="1440" alt="Изображение архитектуры Москвы">
             </picture>
           </div>
@@ -273,8 +273,8 @@
         <div class="children-info__image">
           <picture>
             <source media="(max-width: 767px)"
-              srcset="images/children-mobile.jpg 1x, images/children/children-mobile@2x.jpg 2x">
-            <img class="children-info__img" src="images/children.jpg" srcset="images/children@2x.jpg 2x" height="800"
+              srcset="images/children/children-mobile.jpg 1x, images/children/children-mobile@2x.jpg 2x">
+            <img class="children-info__img" src="images/children/children.jpg" srcset="images/children/children@2x.jpg 2x" loading="lazy" height="800"
               width="1440" alt="Изображение детской площадки">
           </picture>
         </div>
@@ -289,8 +289,8 @@
             <div class="elite-promo__image">
               <picture>
                 <source media="(max-width: 767px)"
-                  srcset="images/elite-mobile.jpg 1x, images/elite/elite-mobile@2x.jpg">
-                <img class="elite-promo__img" src="images/elite.jpg" srcset="images/elite@2x.jpg 2x" height="913"
+                  srcset="images/elite/elite-mobile.jpg 1x, images/elite/elite-mobile@2x.jpg">
+                <img class="elite-promo__img" src="images/elite/elite.jpg" srcset="images/elite/elite@2x.jpg 2x" loading="lazy" height="913"
                   width="1440" alt="Фотография квартиры">
               </picture>
             </div>
@@ -335,8 +335,8 @@
       <div class="section-next__image">
         <picture>
           <source media="(max-width: 767px)"
-            srcset="images/appartment-mobile.jpg 1x, images/next/appartment-mobile@2x.jpg 2x">
-          <img class="section-next__img" src="images/appartment.jpg" srcset="images/appartment@2x.jpg 2x" height="400"
+            srcset="images/next/appartment-mobile.jpg 1x, images/next/appartment-mobile@2x.jpg 2x">
+          <img class="section-next__img" src="images/next/appartment.jpg" srcset="images/next/appartment@2x.jpg 2x" loading="lazy" height="400"
             width="1440" alt="Фотография квартиры">
         </picture>
       </div>
