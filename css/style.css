@@ -806,6 +806,16 @@ textarea {
   justify-content: center;
   gap: 100px;
   align-items: start;
+  position: relative;
+}
+.advantages__wrapper::before {
+  position: absolute;
+  content: "";
+  width: 240px;
+  border: 0.5px solid rgb(186, 186, 186);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%) rotate(90deg);
 }
 @media (max-width: 1280px) {
   .advantages__wrapper {
@@ -1083,7 +1093,7 @@ textarea {
 
 .image-card {
   position: relative;
-  height: 407px;
+  min-height: 407px;
   width: 100%;
   display: flex;
   justify-content: flex-end;
