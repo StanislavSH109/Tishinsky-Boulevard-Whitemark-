@@ -10,11 +10,11 @@
   color: $color-white;
 
   @include vp-1023 {
-    height: 340px;
+    min-height: 340px;
   }
 
   @include vp-767 {
-    height: 265px;
+    min-height: 265px;
   }
 
   &__img {
