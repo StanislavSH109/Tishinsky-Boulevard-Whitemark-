@@ -439,6 +439,10 @@ textarea {
   outline: none;
   transition: border ease-in 0.3s;
 }
+.custom-input__field--error {
+  opacity: 0.5;
+  border: 1px solid #EB3702;
+}
 .custom-input__field:hover {
   border: 1px solid black;
 }
@@ -449,11 +453,16 @@ textarea {
   color: rgba(29, 28, 41, 0.3);
 }
 .custom-input__text {
+  display: none;
   position: absolute;
-  width: 300px;
+  max-width: 300px;
   left: 0;
   bottom: 0;
   transform: translate(10%, 100%);
+}
+.custom-input__text--error {
+  display: block;
+  color: #EB3702;
 }
 
 .custom-checkbox__field:checked + .custom-checkbox__label::after {

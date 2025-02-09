@@ -13,6 +13,11 @@
     outline: none;
     transition: border  $transition-300;
 
+    &--error {
+       opacity: 0.5;
+       border: 1px solid $color-orange-red;
+    }
+
     &:hover {
       border: 1px solid black;
     }
@@ -28,10 +33,16 @@
   }
 
   &__text {
+    display: none;
     position: absolute;
-    width: 300px;
+    max-width: 300px;
     left: 0;
     bottom: 0;
     transform: translate(10%, 100%);
+
+    &--error {
+      display: block;
+      color: $color-orange-red;
+    }
   }
 }
